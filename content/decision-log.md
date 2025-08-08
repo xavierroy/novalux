@@ -15,9 +15,9 @@ This page documents the key decisions made during the Novalux rebuild of <em>xav
 **Context**: [Selecting the foundation technology for the rebuild](blog/intro-to-novalux.md)
 
 **Options Considered**:  
-- Astro (modern but requires JavaScript knowledge)  
-- Hugo (fast but steeper learning curve)  
-- Eleventy (simple, flexible, familiar with HTML/CSS)  
+- [Gatsby](https://www.gatsbyjs.com/) , [Astro](https://astro.build/) & [Next.js](https://nextjs.org/) (modern but requires JavaScript knowledge)  
+- [Hugo](https:/gohugo.io/) (fast but steeper learning curve)  
+- [Eleventy](https://11ty.dev/) (simple, flexible, familiar with HTML/CSS)  
 
 **Choice**: Eleventy  
 **Reasoning**:  
