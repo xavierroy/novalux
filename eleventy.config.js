@@ -4,10 +4,23 @@ import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote";
+
+import eleventyLucideicons from "@grimlink/eleventy-plugin-lucide-icons";
+
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+
+ // Configure markdown-it with footnote support
+  const md = markdownIt({ html: true }).use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", md);
+
+  // Lucide icons shortcode to inline SVG by icon name
+ eleventyConfig.addPlugin(eleventyLucideicons,);
+ 
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
