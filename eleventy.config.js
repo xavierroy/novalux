@@ -19,7 +19,13 @@ export default async function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 
   // Lucide icons shortcode to inline SVG by icon name
- eleventyConfig.addPlugin(eleventyLucideicons,);
+ eleventyConfig.addPlugin(eleventyLucideicons,{
+	"class": "lucide-icon",
+	"width": "1.2em",
+	"height": "1.2em",
+    "stroke": "currentColor",
+    "stroke-width": 2
+ });
  
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
