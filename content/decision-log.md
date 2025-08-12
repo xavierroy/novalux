@@ -16,7 +16,7 @@ This page documents the key decisions made during the Novalux rebuild of <em>xav
 
 **Options Considered**:  
 - [Gatsby](https://www.gatsbyjs.com/) , [Astro](https://astro.build/) & [Next.js](https://nextjs.org/) (modern but requires JavaScript knowledge)  
-- [Hugo](https:/gohugo.io/) (fast but steeper learning curve)  
+- [Hugo](https://gohugo.io/) (fast but steeper learning curve)  
 - [Eleventy](https://11ty.dev/) (simple, flexible, familiar with HTML/CSS)  
 
 **Choice**: Eleventy  
@@ -28,21 +28,25 @@ This page documents the key decisions made during the Novalux rebuild of <em>xav
 **Status**: ✅ Implemented  
 
 ---
-<!--
-## Decision #002: Content Structure  
-**Date**: August 6, 2025  
-**Context**: Organizing content to reflect online presence  
+
+## Decision #002: Site Structure – Single Page  
+**Date**: August 12, 2025  
+**Context**: Defining the scope and user experience for the redesign  
+
 **Options Considered**:  
-- Single page
-- Modular pillars based on origin and content type  
+- **Multi-page site** – clear separation of content, but more navigation overhead  
+- **Single-page site** – all core sections on one scrollable page  
 
-**Choice**: Modular pillars: Projects (Experiments), Writing, Reading, Social (grouped by origin)  
+**Choice**: **Single-page site**  
 **Reasoning**:  
-- Reflects the diversity of content and platforms  
-- Scales well over time  
+- Minimalist approach with reduced complexity  
+- Faster performance and easier maintenance  
+- Clearer and more direct user journey  
 
-**Status**: ⬜ Planned  
+**Impact**:  
+- All core information (hero, featured work, latest writing, about, contact) presented on one scrollable page  
+- No multi-page navigation required  
+
+**Status**: ✅ Approved  
 
 ---
-
--->
