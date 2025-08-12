@@ -125,6 +125,7 @@ npx eleventy --serve
 
 If all is well, you’ll see your markdown content styled by the layout at http://localhost:8080 (or the port Eleventy chooses).
 
+> You can view my site at [new.xavierroy.in](https://new.xavierroy.in/). {% lucide "rocket" %}
 
 ## Lessons & observations
 - Even a minimal Eleventy setup benefits from an early defined directory structure.  
