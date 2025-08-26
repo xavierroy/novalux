@@ -50,3 +50,17 @@ This page documents the key decisions made during the Novalux rebuild of <em>xav
 **Status**: ✅ Approved  
 
 ---
+
+## Decision #003: Use Eleventy Global Data for Dynamic Copyright Year
+**Date**: August 16, 2025
+
+**Context**: Needed a way to auto-update the copyright year in the footer.
+
+**Options considered**: Inline JS (failed), custom filter (possible), or global data.
+
+**Decision**: Add currentYear as a global data value in `eleventy.config.cjs` for simplicity and reusability.
+
+**Status**: ✅ Implemented 
+
+---
+
